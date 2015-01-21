@@ -31,11 +31,11 @@ html {
 
 @-webkit-keyframes scale {
     0% {
-        transform: scale(1,1);
+        -webkit-transform: scale(1,1);
     }
     
     100% {
-        transform: scale(1.1,1.1);
+        -webkit-transform: scale(1.1,1.1);
     }
 }
 
@@ -61,11 +61,11 @@ html {
 
 @-webkit-keyframes asteroid-rotate {
     0% {
-        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
     }
     
     100% {
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
     }
 }
 
@@ -91,15 +91,15 @@ html {
 
 @-webkit-keyframes bounce {
     0% {
-        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
     }
 
     50% {
-        transform: translateX(250px);
+        -webkit-transform: translateX(250px);
     }
     
     100% {
-        transform: translateY(150px);
+        -webkit-transform: translateY(150px);
     }
 }
 
