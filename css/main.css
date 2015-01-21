@@ -25,7 +25,18 @@ html {
     background-image: url("../images/stars.svg");
     width: 100%;
     height: 100vh;
+    -webkit-animation: scale 20s ease-in-out alternate infinite;
     animation: scale 20s ease-in-out alternate infinite;
+}
+
+@-webkit-keyframes scale {
+    0% {
+        transform: scale(1,1);
+    }
+    
+    100% {
+        transform: scale(1.1,1.1);
+    }
 }
 
 @keyframes scale {
@@ -44,7 +55,18 @@ html {
     height: 150px;
     left: 100px;
     top: 100px;
+    -webkit-animation: asteroid-rotate 8s ease-in-out infinite alternate;
     animation: asteroid-rotate 8s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes asteroid-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes asteroid-rotate {
@@ -63,7 +85,22 @@ html {
     height: 100px;
     left: 350px;
     top: 250px;
+    -webkit-animation: bounce 1.5s linear alternate infinite;
     animation: bounce 1.5s linear alternate infinite;
+}
+
+@-webkit-keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateX(250px);
+    }
+    
+    100% {
+        transform: translateY(150px);
+    }
 }
 
 @keyframes bounce {
@@ -76,7 +113,7 @@ html {
     }
     
     100% {
-        transform: translateY(200px);
+        transform: translateY(150px);
     }
 }
     
